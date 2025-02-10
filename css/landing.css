@@ -1,0 +1,240 @@
+.main-banner {
+    width: 100%;
+    height: 700px;
+    background: linear-gradient(blue, purple);
+    position: relative;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.header-text-style {
+    color: white;
+    font-size: 40px;
+    margin-left: 40px;
+    margin-top: 40px;
+    padding: 0;
+}
+
+.sub-text-style {
+    margin-left: 30px;
+    color: white;
+    font-size: 20px;
+}
+
+.banner-button {
+    margin-top: 200px;
+    margin-left: 50px;
+
+}
+
+.img-layout {
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    left: 70%;
+    bottom: 10%;
+}
+
+.img-layout img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+@media screen and (max-width: 768px) {
+    .main-banner {
+        height: 1200px;
+    }
+
+    .banner-button {
+        margin-top: 5px;
+        margin-left: 300px;
+    }
+
+    .sub-text-style {
+        justify-content: center;
+        /* 내부 텍스트 수평 중앙 */
+        align-items: center;
+        /* 내부 텍스트 수직 중앙 */
+        text-align: center;
+    }
+
+    .img-layout {
+        left: 20%;
+    }
+}
+
+
+
+
+h2 {
+    justify-content: center;
+    /* 내부 텍스트 수평 중앙 */
+    align-items: center;
+    /* 내부 텍스트 수직 중앙 */
+    text-align: center;
+    margin: 0;
+}
+
+h4 {
+    justify-content: center;
+    /* 내부 텍스트 수평 중앙 */
+    align-items: center;
+    /* 내부 텍스트 수직 중앙 */
+    text-align: center;
+    margin: 0;
+    font-weight: 200;
+}
+
+.show-button {
+    margin-top: 5px;
+    margin-left: 45%;
+}
+
+.button-box {
+    width: 150px;
+    height: 100px;
+    background-color: gray;
+    border: 0;
+    border-radius: 10px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.content-bg {
+    margin-top: 50px;
+    width: 100%;
+    height: 500px;
+    background-color: cadetblue
+}
+
+.content-bg i {
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+    .content-bg {
+        height: 1000px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+.content-text {
+    justify-content: center;
+    /* 내부 텍스트 수평 중앙 */
+    align-items: center;
+    /* 내부 텍스트 수직 중앙 */
+    text-align: center;
+    margin: 0;
+}
+
+
+
+
+.info-style {
+    float: left;
+    width: 20%;
+    margin-left: 5%;
+    margin-top: 5%;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .info-style {
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+
+
+    .center-text {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.quater-box {
+    width: 80%;
+    max-width: 1000px;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.quater-container {
+    justify-content: center;
+    /* 가로 중앙 정렬 */
+    align-items: center;
+    /* 세로 중앙 정렬 */
+    margin: 0;
+}
+
+
+.first-quater-box {
+    width: 50%;
+    height:400px;
+    background-image: url(../img/portfolio-1.jpg);
+    position: relative;
+    
+}
+
+.second-quater-box {
+    width:50%;
+    height:400px;
+    background-image: url(../img/portfolio-2.jpg);
+    position: relative;
+}
+
+.third-quater-box {
+    width: 50%;
+    height: 400px;
+    background-image: url(../img/portfolio-3.jpg);
+    position: relative;
+}
+
+.fourth-quater-box {
+    width: 50%;
+    height: 400px;
+    background-image: url(../img/portfolio-4.jpg);
+    position: relative;
+}
+
+.style-margin-left {
+    margin-left: 20px
+}
+
+.animation-box {
+    border: 20px solid white;
+    position: absolute;
+    width: 92%;
+    height: 92%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.1s;
+}
+
+.animation-box:hover {
+    opacity: 1;
+}
